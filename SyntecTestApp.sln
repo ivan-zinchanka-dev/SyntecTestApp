@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntecTestApp", "SyntecTestApp\SyntecTestApp.csproj", "{33054426-ADB5-44AE-B760-521FD2566D8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntecTestApp", "SyntecTestApp\SyntecTestApp.csproj", "{29E9F355-DB6D-4BDC-84F4-BE6EA92AE55A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{33054426-ADB5-44AE-B760-521FD2566D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33054426-ADB5-44AE-B760-521FD2566D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{33054426-ADB5-44AE-B760-521FD2566D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{33054426-ADB5-44AE-B760-521FD2566D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E9F355-DB6D-4BDC-84F4-BE6EA92AE55A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E9F355-DB6D-4BDC-84F4-BE6EA92AE55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E9F355-DB6D-4BDC-84F4-BE6EA92AE55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E9F355-DB6D-4BDC-84F4-BE6EA92AE55A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
