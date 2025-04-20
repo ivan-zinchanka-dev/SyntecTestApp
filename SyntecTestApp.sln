@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntecTestApp", "SyntecTestApp\SyntecTestApp.csproj", "{29E9F355-DB6D-4BDC-84F4-BE6EA92AE55A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntecTestApp.Resources", "SyntecTestApp.Resources\SyntecTestApp.Resources.csproj", "{44F83008-B42D-45D9-96B3-F2FF8B59D733}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{29E9F355-DB6D-4BDC-84F4-BE6EA92AE55A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29E9F355-DB6D-4BDC-84F4-BE6EA92AE55A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29E9F355-DB6D-4BDC-84F4-BE6EA92AE55A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44F83008-B42D-45D9-96B3-F2FF8B59D733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F83008-B42D-45D9-96B3-F2FF8B59D733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F83008-B42D-45D9-96B3-F2FF8B59D733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F83008-B42D-45D9-96B3-F2FF8B59D733}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

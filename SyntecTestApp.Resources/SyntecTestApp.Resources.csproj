@@ -5,14 +5,13 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{29E9F355-DB6D-4BDC-84F4-BE6EA92AE55A}</ProjectGuid>
-        <OutputType>Exe</OutputType>
+        <ProjectGuid>{44F83008-B42D-45D9-96B3-F2FF8B59D733}</ProjectGuid>
+        <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>SyntecTestApp</RootNamespace>
-        <AssemblyName>SyntecTestApp</AssemblyName>
+        <RootNamespace>SyntecTestApp.Resources</RootNamespace>
+        <AssemblyName>SyntecTestApp.Resources</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
-        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,35 +33,32 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="MMICommon32">
-          <HintPath>..\SyntecTestApp.Resources\MMICommon32.dll</HintPath>
-        </Reference>
-        <Reference Include="nunit.framework">
-          <HintPath>..\SyntecTestApp.Resources\nunit.framework.dll</HintPath>
-        </Reference>
-        <Reference Include="Syntec.OpenCNC">
-          <HintPath>..\SyntecTestApp.Resources\Syntec.OpenCNC.dll</HintPath>
-        </Reference>
-        <Reference Include="Syntec.RemoteCNC">
-          <HintPath>..\SyntecTestApp.Resources\Syntec.RemoteCNC.dll</HintPath>
-        </Reference>
-        <Reference Include="Syntec.RemoteObj">
-          <HintPath>..\SyntecTestApp.Resources\Syntec.RemoteObj.dll</HintPath>
-        </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\SyntecTestApp.Resources\SyntecTestApp.Resources.csproj">
-        <Project>{44f83008-b42d-45d9-96b3-f2ff8b59d733}</Project>
-        <Name>SyntecTestApp.Resources</Name>
-      </ProjectReference>
+      <Content Include="MMICommon32.dll" />
+      <Content Include="nunit.framework.dll" />
+      <Content Include="OCAPI.dll">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="OCKrnl.dll">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="OCKrnlDrv.dll">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="OCUser.dll">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Syntec.OpenCNC.dll" />
+      <Content Include="Syntec.RemoteCNC.dll" />
+      <Content Include="Syntec.RemoteObj.dll" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
