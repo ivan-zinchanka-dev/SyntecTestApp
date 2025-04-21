@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Extensions.Configuration;
 using Syntec.MMICommon;
 using Syntec.OpenCNC;
 using Syntec.Remote;
@@ -12,7 +13,15 @@ public static class Program
         
         try
         {
-            using (var syntecRemote = new SyntecRemoteCNC("192.168.0.100"))
+            IConfigurationRoot config = new ConfigurationBuilder()
+                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .AddJsonFile("appsettings.json", optional: false)
+                .Build();
+
+            string hostIp = config["Host:Ip"];
+            Console.WriteLine("Read host ip: {0}", hostIp);
+            
+            using (var syntecRemote = new SyntecRemoteCNC(hostIp))
             {
 
                 bool isUsb = syntecRemote.isUSBExist();
